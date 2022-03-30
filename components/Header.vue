@@ -10,10 +10,9 @@ export default {
     components:{
         MenuLinks
     },
-    css: '@/assets/styles/main.scss'
 }
 </script>
-<style scoped>
+<style >
 .header {
   font-weight: 600;
   position: fixed;
