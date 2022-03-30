@@ -1,13 +1,16 @@
 <template>
   <nav>
-      <b-button v-b-toggle.collapse-2 class="m-1" to="./projects"> Menu </b-button>
+      <b-button v-b-toggle.collapse-2 class="m-1" > Menu </b-button>
      
     <ul class="header__links">
+         <b-collapse id="collapse-2">
       <li>
+       
          <b-link class="header__link" to="./projects"> Proyectos </b-link>
       </li>
       <li><b-link class="header__link" to="/about_me">CV</b-link></li>
       <li><b-link class="header__link" to="./contact">Contacto</b-link></li>
+        </b-collapse>
     </ul>
   </nav>
 </template>
