@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -11,12 +11,16 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'portfolio migrado a VUE' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'portfolio migrado a VUE',
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['@/assets/styles/main.scss'],
 

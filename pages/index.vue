@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <AboutMe/>
+    <AboutMe />
     <Footer />
   </div>
 </template>
@@ -12,7 +12,7 @@ import Header from '../components/Header.vue';
 import AboutMe from '../components/AboutMe.vue'
 
 export default {
-  components: { Header, Footer },
+  components: { Header, Footer, AboutMe },
   name: 'IndexPage',
 }
 </script>

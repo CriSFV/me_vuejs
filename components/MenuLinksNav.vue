@@ -8,7 +8,7 @@
        
          <b-link class="header__link" to="./projects"> Proyectos </b-link>
       </li>
-      <li><b-link class="header__link" to="/about_me">CV</b-link></li>
+      <li><b-link class="header__link" to="/aboutme">CV</b-link></li>
       <li><b-link class="header__link" to="./contact">Contacto</b-link></li>
         </b-collapse>
     </ul>

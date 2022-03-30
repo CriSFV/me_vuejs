@@ -5,7 +5,7 @@
         <div className='hero__content__photo'>
           <img className='hero__photo' src={photo} alt='this is me' />
         </div>
-        <h1 className='hero__title'>¡¡Hola Mundo!! </h1>
+        <h1 className='hero__title'>¡¡Hola!! </h1>
         <h2 className='hero__subtitle'>Soy Cris F. Valverde</h2>
 
         <h3 className='hero__subtitle2'>Jr. Front-End Developer</h3>
@@ -16,19 +16,17 @@
             desarrollo de las personas.
           </p>
         </article>
-        <MenuLinksNav />
+ 
       </div>
     </section>
     </main>
 </template>
 
 <script>
-import MenuLinksNav from "~/components/MenuLinksNav.vue"
+
 export default {
   name:'AboutMe',
-    components:{
-        MenuLinksNav
-    }
+
 }
 </script>
 
