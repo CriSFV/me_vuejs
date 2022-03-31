@@ -22,7 +22,7 @@ export default {
 <style>
 .footer {
    background-image: linear-gradient(#273bec, rgb(58, 58, 52));
-   color:whitesmoke;
+   color:#eee1bb;
   font-size: 14px;
   margin-top: 15px;
   height: 30px;

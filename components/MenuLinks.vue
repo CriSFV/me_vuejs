@@ -16,5 +16,6 @@ export default {
     font-size: 35px;
     position: relative;
     left:10px;
+    color:#eee1bb;
 }
 </style>

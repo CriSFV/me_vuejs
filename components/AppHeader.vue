@@ -14,11 +14,11 @@ export default {
 </script>
 <style >
 .header {
-  font-weight: 600;
-  position: fixed;
-  width: 100%;
-  background-image: linear-gradient(#273bec, rgb(58, 58, 52));
-  z-index: 100;
-  font-size: 5px;
-  }
+    font-weight: 600;
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(#273bec, rgb(58, 58, 52));
+    z-index: 100;
+    font-size: 5px;
+    }
 </style>

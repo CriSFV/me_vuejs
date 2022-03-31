@@ -1,31 +1,6 @@
 <template>
   <main>
-    <section class="hero" id="home">
-      <div class="hero__content">
-        <div class="hero__content__photo">
-          <img class="hero__photo" src="{photo}" alt="this is me" />
-        </div>
-        <h1 class="hero__title">¡¡Hola!!</h1>
-        <h2 class="hero__subtitle">Soy Cris F. Valverde</h2>
-
-        <h3 class="hero__subtitle2">Jr. Front-End Developer</h3>
-        <article class="hero__info">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Dignissimos delectus quo voluptatem eveniet provident sed culpa
-            atque quis, et dolor. Ad modi fuga soluta, in assumenda
-            reprehenderit nostrum unde quisquam?Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Reiciendis nesciunt ad ducimus totam
-            amet harum repellat! Voluptatum, nam. Assumenda earum placeat hic ab
-            eaque repellendus natus dolor tenetur sapiente totam. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Velit rerum quae
-            ducimus et ab sed magnam reiciendis sapiente, natus voluptates
-            necessitatibus distinctio aspernatur possimus suscipit alias.
-            Distinctio obcaecati iure laudantium.
-          </p>
-        </article>
-      </div>
-    </section>
+   <div>lenguajes y resumen trayectoria</div>
   </main>
 </template>
 
