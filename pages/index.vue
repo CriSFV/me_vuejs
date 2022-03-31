@@ -2,16 +2,16 @@
   <div>
     <AppHeader />
 
-    <section className="hero" id="home">
-      <div className="hero__content">
-        <div className="hero__content__photo">
-          <img className="hero__photo" src="#" alt="this is me" />
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <div class="hero__content__photo">
+          <img class="hero__photo" src="../assets/images/editorimg.jpg" alt="this is me" />
         </div>
-        <h1 className="hero__title">¡¡Hola!!</h1>
-        <h2 className="hero__subtitle">Soy Yo</h2>
+        <h1 class="hero__title">¡¡Hola!!</h1>
+        <h2 class="hero__subtitle">Soy Yo</h2>
 
-        <h3 className="hero__subtitle2">Titulo descripción</h3>
-        <article className="hero__info">
+        <h3 class="hero__subtitle2">Titulo descripción</h3>
+        <article class="hero__info">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Dignissimos delectus quo voluptatem eveniet provident sed culpa
@@ -38,33 +38,28 @@
 <script>
 import AppFooter from '../components/AppFooter.vue';
 import AppHeader from '../components/AppHeader.vue';
-import AboutMe from '../components/AboutMe.vue';
+
 
 
 export default {
-  components: { AppHeader, AppFooter, AboutMe },
+  components: { AppHeader, AppFooter },
   name: 'IndexPage',
 
 }
 </script>
+<style>
 
-<style lang="scss" >
-
-.hero {
-  height: 100vh;
-}
 .hero__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 25px 80px 25px;
+  padding: 70px 25px 0px 25px;
 }
 
 .hero__photo {
   margin-top: 30px;
-  width: 8em;
-  border: 2px solid black;
+width: 50vw;
   border-radius: 15%;
 }
 
@@ -86,6 +81,5 @@ export default {
   margin-top: 1em;
   text-align: justify;
 }
-</style>>
 
- 
+</style>

@@ -1,15 +1,15 @@
 <template>
   <main>
-    <section className="hero" id="home">
-      <div className="hero__content">
-        <div className="hero__content__photo">
-          <img className="hero__photo" src="{photo}" alt="this is me" />
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <div class="hero__content__photo">
+          <img class="hero__photo" src="{photo}" alt="this is me" />
         </div>
-        <h1 className="hero__title">¡¡Hola!!</h1>
-        <h2 className="hero__subtitle">Soy Cris F. Valverde</h2>
+        <h1 class="hero__title">¡¡Hola!!</h1>
+        <h2 class="hero__subtitle">Soy Cris F. Valverde</h2>
 
-        <h3 className="hero__subtitle2">Jr. Front-End Developer</h3>
-        <article className="hero__info">
+        <h3 class="hero__subtitle2">Jr. Front-End Developer</h3>
+        <article class="hero__info">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Dignissimos delectus quo voluptatem eveniet provident sed culpa
