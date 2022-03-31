@@ -3,10 +3,19 @@
 <template>
   <div class="home-page">
     <section class="intro">
-      <h1>project general page:solo principal</h1>
+      <h1>preview de los proyectos</h1>
     </section>
-    <section class="featured-post">
-     <ProjectPreview/>
+    <section class="featured-posts">
+     <ProjectPreview 
+     id="1"
+     thumbnail="https://www.google.com/imgres?imgurl=https%3A%2F%2Fst.depositphotos.com%2F1438688%2F3547%2Fi%2F600%2Fdepositphotos_35476539-stock-photo-codejavascript-in-text-editor.jpg"
+     title= "nombre proyecto 1"
+     previewText="breve descripción del proyecto"/>
+     <ProjectPreview 
+     id="3"
+     thumbnail="https://www.google.com/imgres?imgurl=https%3A%2F%2Fst.depositphotos.com%2F1438688%2F3547%2Fi%2F600%2Fdepositphotos_35476539-stock-photo-codejavascript-in-text-editor.jpg"
+     title= "nombre proyecto"
+     previewText="breve descripción del proyecto"/>
     </section>
   </div>
 </template>
