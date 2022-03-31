@@ -27,17 +27,25 @@ export default {
   border-radius: 15px;
   text-decoration: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0.3rem;
   transition: transform ease 1s;
 
 }
+ .dropdown-item:hover{
+   border-radius: 15px;
+   border: #273bec 0.5px solid;
+   background-color: #eee1bb;
+   color: #273bec;
+     font-size: 18px;
+} 
 .dropdown-item{
     color:#eee1bb;
 }
+
 .dropdown-menu.show{
-  background-color: #eee1bb;
-  border-radius: 15px;
+  background-color: transparent;
+  border: none;
 }
 
 </style>

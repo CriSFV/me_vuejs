@@ -6,41 +6,25 @@
       <h1>project general page:solo principal</h1>
     </section>
     <section class="featured-post">
-      <nuxt-link :to="'/projects/' + 1" class="post-preview">
-        <article >
-          <div class="post-thumbnail">
-            <div class="post-content">
-              <h1>Titulo project</h1>
-              <h1>Descripción</h1>
-            </div>
-          </div>
-        </article>
-      </nuxt-link>
-      <nuxt-link :to="'/projects/' + 2" class="post-preview">
-        <article >
-          <div
-            class="post-thumbnail"
-            style="background-image: '~/assets/images/editorimg.jpg'"
-          >
-            <div class="post-content">
-              <h1>Titulo project</h1>
-              <h1>Descripción</h1>
-            </div>
-          </div>
-        </article>
-      </nuxt-link>
+     <ProjectPreview/>
     </section>
   </div>
 </template>
 
 
 <script>
-export default {}
+import ProjectPreview from '~/components/Project/ProjectPreview.vue'
+export default {
+  components:{
+    ProjectPreview
+  }
+}
 </script>
 
 <style>
 .intro {
-  height: 300px;
+  height: 30px;
+  margin: 40px;
   position: relative;
   padding: 30px;
   box-sizing: border-box;
@@ -54,8 +38,8 @@ export default {}
   left: 5%;
   width: 90%;
   font-size: 1.5rem;
-  color: black;
-  background-color: rgb(211, 211, 211);
+  color: #eee1bb;
+   background-image: linear-gradient(#273bec, rgb(58, 58, 52));
   padding: 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px black;
@@ -78,40 +62,4 @@ export default {}
   justify-content: center;
 }
 
-.post-preview {
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 2px #ccc;
-  background-color: white;
-  width: 90%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-@media (min-width: 850px) {
-  .post-preview {
-    width: 400px;
-    margin: 10px;
-  }
-}
-
-.post-thumbnail {
-  width: 100%;
-  height: 200px;
-  background-color: lightblue;
-  background-position: center;
-  background-size: cover;
-}
-
-.post-content {
-  padding: 10px;
-  text-align: center;
-}
-
-a:hover .post-content,
-a:active .post-content {
-  background-color: #ccc;
-}
 </style>
