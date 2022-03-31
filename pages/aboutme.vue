@@ -2,6 +2,10 @@
 <div>
   <AppHeader/>
   
+    <div class="posts-page">
+<nuxt/>
+    </div>
+
   <AppFooter/>
   </div>
 </template>
@@ -20,5 +24,9 @@ export default {
 
 
 <style>
-
+.posts-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

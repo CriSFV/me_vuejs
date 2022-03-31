@@ -1,10 +1,10 @@
 <template>
 
-    <b-dropdown class="m-2 menu__button"  text="Menu" variant="#eee1bb" >  
-        <b-dropdown-item variant="warning" class="header__link" to="./projects"
+    <b-dropdown class="m-2 menu__button" text="Menu" variant="#eee1bb">  
+        <b-dropdown-item variant="#eee1bb" class="header__link" to="./projects"
           >Proyectos</b-dropdown-item>
-        <b-dropdown-item variant="warning" class="header__link" to="/aboutme">CV</b-dropdown-item>
-        <b-dropdown-item variant="warning" class="header__link" to="./contact"
+        <b-dropdown-item variant="#eee1bb" class="header__link" to="/aboutme">CV</b-dropdown-item>
+        <b-dropdown-item variant="#eee1bb" class="header__link" to="./contact"
           >Contacto</b-dropdown-item>
     </b-dropdown>
 
@@ -30,9 +30,10 @@ export default {
   font-size: 18px;
   margin: 0.3rem;
   transition: transform ease 1s;
-  @media (min-width: 768px) {
-    margin: 1rem 1rem;
-  }
+
+}
+.dropdown-item{
+    color:#eee1bb;
 }
 .dropdown-menu.show{
   background-color: #eee1bb;

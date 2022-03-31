@@ -55,11 +55,13 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 70px 25px 0px 25px;
+  background-color: #eee1bb;
+  height: 95vh;
 }
 
 .hero__photo {
   margin-top: 30px;
-width: 50vw;
+  width: 50vw;
   border-radius: 15%;
 }
 
