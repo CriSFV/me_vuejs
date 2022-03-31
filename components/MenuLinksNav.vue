@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: ' MenuLinksNav',
+  name: 'MenuLinksNav',
 }
 </script>
 <style>

@@ -1,5 +1,12 @@
-/** projects general page */
+// /** projects general page */
 
 <template>
-       <h1>Pagina de proyectos general </h1>
+       <h1>project general page:solo principal </h1>
 </template>
+
+
+<script>
+export default {
+   
+}
+</script>
