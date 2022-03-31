@@ -21,12 +21,18 @@ export default {
 
 <style>
 .footer {
+   background-image: linear-gradient(#273bec, rgb(58, 58, 52));
+   color:whitesmoke;
   font-size: 14px;
-  padding-top: 15px;
+  margin-top: 15px;
   height: 30px;
   position: fixed;
-  bottom: 10px;
+  bottom: 0;
   width: 100vw;
+}
+.copy{
+  padding-bottom: 10px;
+  margin-left: 20px;
 }
 
 

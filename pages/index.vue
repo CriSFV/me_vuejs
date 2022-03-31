@@ -1,7 +1,10 @@
 <template>
   <div>
     <Header />
-    <AboutMe />
+    <router-view v-slot="{AboutMe}">
+      <component :is="AboutMe" />
+    </router-view>
+  
     <Footer />
   </div>
 </template>
