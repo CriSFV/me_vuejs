@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="post-project">
 
-    <nuxt-link :to="'/projects/' + id" class="post-preview">
-      <article>
-        <div class="post-thumbnail" :style="{ backgroundImage: 'url(' + thumbnail + ')' }"></div>
+    <nuxt-link :to="'/projects/' + id" class="post-preview" >
+      <article style="margin:10px">
+        <div class="post-thumbnail"></div>
         <div class="post-content">
           <h1>{{ title }}</h1>
           <h1>{{ previewText }}</h1>
@@ -18,19 +18,19 @@ export default {
   props: {
     id: {
       type: String,
-    //   required: true,
+      required: true,
     },
     title: {
       type: String,
-    //  required: true,
+     required: true,
     },
     previewText: { 
         type: String, 
-    //    required: true
+        required: true
     },
     thumbnail: { 
         type: String, 
-    //    required: true 
+        required: false 
     },
   },
 }
@@ -60,6 +60,7 @@ a {
   width: 100%;
   height: 200px;
   background-color: lightblue;
+  background-image: url(~assets/images/editorimg.jpg);
   background-position: center;
   background-size: cover;
 }

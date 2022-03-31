@@ -16,6 +16,8 @@ export default {
 .header {
     font-weight: 600;
     position: fixed;
+    height: 60px;
+    top: 0;
     width: 100%;
     background-image: linear-gradient(#273bec, rgb(58, 58, 52));
     z-index: 100;
