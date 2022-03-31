@@ -1,6 +1,6 @@
 <template>
     <nav class="home">
-<nuxt-link class="header__link__home" to="/"> Home </nuxt-link>
+<b-link class="header__link__home" to="/"> Home </b-link>
 <MenuLinksNav/>
     </nav>
 </template>
@@ -12,5 +12,9 @@ export default {
 }
 </script>
 <style scoped>
-
+.header__link__home{
+    font-size: 35px;
+    position: relative;
+    left:10px;
+}
 </style>

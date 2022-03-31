@@ -19,6 +19,6 @@ export default {
   width: 100%;
   background-image: linear-gradient(#273bec, rgb(58, 58, 52));
   z-index: 100;
-  display: flex;
-  font-size: 5px;}
+  font-size: 5px;
+  }
 </style>
