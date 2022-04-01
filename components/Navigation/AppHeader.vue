@@ -6,7 +6,7 @@
 <script>
 import MenuLinks from './MenuLinks.vue'
 export default {
-    name:'header',
+    name:'Appheader',
     components:{
         MenuLinks
     },
