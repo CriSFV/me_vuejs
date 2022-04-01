@@ -52,21 +52,20 @@ export default {
 .hero__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 70px 25px 0px 25px;
+  padding: 90px 40px 0px 60px;
   background-color: #eee1bb;
-  height: 95vh;
+  height: 100vh;
 }
 
 .hero__photo {
-  margin-top: 30px;
-  width: 50vw;
+  width: 30vw;
+  height: 30vh;
   border-radius: 15%;
 }
 
 .hero__title {
-  margin: 3px;
+  margin: 10px;
 
 }
 
