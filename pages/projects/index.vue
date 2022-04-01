@@ -57,7 +57,7 @@ position: absolute;
   width: 90%;
   font-size: 1.5rem;
   color: #eee1bb;
-   background-image: linear-gradient(#273bec, rgb(58, 58, 52));
+   background-image: linear-gradient(#848ff2, rgb(58, 58, 52));
   padding: 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px black;

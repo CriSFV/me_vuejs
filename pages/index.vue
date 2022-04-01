@@ -46,6 +46,7 @@ import AppHeader from '../components/Navigation/AppHeader.vue'
 export default {
   components: { AppHeader, AppFooter },
   name: 'IndexPage',
+  layouts:''
 }
 </script>
 <style>
