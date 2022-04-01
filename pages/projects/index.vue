@@ -38,6 +38,7 @@ export default {
 <style>
 .home-page{
     background-color: #eee1bb;
+    height: 100vh;
 }
 .intro {
   height: 35px;

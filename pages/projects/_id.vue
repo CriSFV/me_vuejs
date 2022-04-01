@@ -32,9 +32,12 @@ export default {
 
 <style>
 .single-post-page {
+  background-color: #eee1bb;
+  margin: 40px 0;
   padding: 30px;
   text-align: center;
   box-sizing: border-box;
+  height: 100vh;
 }
 
 .post {
