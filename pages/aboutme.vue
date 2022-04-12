@@ -1,30 +1,21 @@
 <template>
-<div>
-  <AppHeader/>
-  
-    <div class="posts-page">
-<nuxt/>
-    </div>
-
-  <AppFooter/>
+  <div>
+    <AppHeader />
+    <div class="posts-page"></div>
+    <AppFooter />
   </div>
 </template>
 
 <script>
-import AppHeader from '../components/Navigation/AppHeader.vue';
-import AppFooter from '../components/AppFooter.vue';
 export default {
+  layout: 'default',
   name: 'AboutMe',
-  components:{
-    AppHeader,
-    AppFooter
-  }
 }
 </script>
 
 
 <style>
-.posts-page{
+.posts-page {
   display: flex;
   justify-content: center;
   align-items: center;

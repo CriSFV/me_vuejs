@@ -1,19 +1,19 @@
 <template>
-    <div>
-        <AppHeader/>
-        <nuxt/>
-    </div>
+  <div>
+    <AppHeader />
+    <nuxt />
+    <AppFooter />
+  </div>
 </template>
 
 <script>
-import AppHeader from "~/components/Navigation/AppHeader.vue"
 export default {
- components:{
-     AppHeader
- }
+  components: {
+    AppHeader: () => import('../components/Navigation/AppHeader.vue'),
+    AppFooter: () => import('../components/AppFooter.vue'),
+  },
 }
 </script>
 
 <style>
-
 </style>

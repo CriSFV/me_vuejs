@@ -29,8 +29,11 @@
             dolor sit, amet consectetur adipisicing elit. Velit rerum quae
             ducimus et ab sed magnam reiciendis sapiente, natus voluptates
             necessitatibus distinctio aspernatur possimus suscipit alias.
-            Distinctio obcaecati iure laudantium.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, recusandae ipsam! Error perspiciatis reprehenderit illo dolore distinctio, eligendi quia, temporibus exercitationem ratione quisquam eaque minus libero ipsum possimus repellendus itaque.
+            Distinctio obcaecati iure laudantium. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Neque, recusandae ipsam! Error
+            perspiciatis reprehenderit illo dolore distinctio, eligendi quia,
+            temporibus exercitationem ratione quisquam eaque minus libero ipsum
+            possimus repellendus itaque.
           </p>
         </article>
       </div>
@@ -48,7 +51,7 @@ import AppHeader from '../components/Navigation/AppHeader.vue'
 export default {
   components: { AppHeader, AppFooter },
   name: 'IndexPage',
-  layouts:''
+  layouts: 'default',
 }
 </script>
 <style>
@@ -56,7 +59,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-   padding: 90px 30px 0px 40px;
+  padding: 90px 30px 0px 40px;
   background-color: #eee1bb;
   height: 100vh;
 }

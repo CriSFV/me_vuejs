@@ -1,8 +1,20 @@
 <template>
   <div class="post-project">
+    <nuxt-link :to="'/projects/' + id" class="post-preview">
+      <article style="margin: 10px">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <span class="stars"></span>
+              <h2 class="java">{{ title }}</h2>
+              <p class="java">{{ previewText }}</p>
+            </div>
+          </div>
+          <div class="face face2">
+            <h2>{{ title }}</h2>
+          </div>
+        </div>
 
-    <nuxt-link :to="'/projects/' + id" class="post-preview" >
-      <article style="margin:10px">
         <div class="post-thumbnail"></div>
         <div class="post-content">
           <h1>{{ title }}</h1>
@@ -22,21 +34,23 @@ export default {
     },
     title: {
       type: String,
-     required: true,
+      required: true,
     },
-    previewText: { 
-        type: String, 
-        required: true
+    previewText: {
+      type: String,
+      required: true,
     },
-    thumbnail: { 
-        type: String, 
-        required: false 
+    thumbnail: {
+      type: String,
+      required: false,
     },
   },
 }
 </script>
 
-<style>
+
+<style lang="scss" scoped>
+@import '@/assets/styles/projects.scss';
 .post-preview {
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px #ccc;
