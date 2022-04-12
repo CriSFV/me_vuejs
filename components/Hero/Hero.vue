@@ -32,4 +32,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.hero {
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  &__photo {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15%;
+  }
+}
 </style>
