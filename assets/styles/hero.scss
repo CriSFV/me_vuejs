@@ -1,9 +1,17 @@
+@import '@/assets/styles/_variables.scss';
+
+.hero {
+    height: 100vh;
+    background: radial-gradient(#E892BF,
+            #ffff);
+
+}
+
 .hero__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 90px 30px 0px 40px;
-    background-color: #eee1bb;
     height: 100vh;
 
 }

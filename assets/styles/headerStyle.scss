@@ -1,0 +1,12 @@
+@import '@/assets/styles/_variables.scss';
+
+.header {
+    font-weight: 600;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    background-image: $principal-dark !important;
+    z-index: 100;
+    font-size: 5px;
+}
