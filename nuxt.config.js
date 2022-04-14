@@ -20,12 +20,18 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel:'stylesheet', href: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" }
+      { rel:'stylesheet', href: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" },
+      { rel: 'preconnect', href:' https://fonts.googleapis.com'},
+      { rel: 'preconnect', href:' https://fonts.gstatic.com'},
+      { rel: 'stylesheet', href:' https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Montserrat&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap '}
     ],
   },
 
+
+
+
   // Global CSS: https://go.nuxtjs.dev/config-css. no funciona con @ solo con ~/
-  css: ['~/assets/styles/main.css'],
+  scss: ['~/assets/styles/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
