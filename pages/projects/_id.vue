@@ -1,38 +1,40 @@
 <template>
-    <!-- // nuxt lleva incluido los parametros, no hay que definirlos. rutas dinamicas las creamos a través de carpetas o ficheros (empieza con _) -->
-    
-<div class="single-post-page">
+  <!-- // nuxt lleva incluido los parametros, no hay que definirlos. rutas dinamicas las creamos a través de carpetas o ficheros (empieza con _) -->
+
+  <div class="single-post-page">
     <section class="post">
-        <h1 class="post-title">Pagina de proyecto con ID {{$route.params.id}} </h1> 
-        <div class="post-details">
-            <div class="post-detail">Descripción</div>
-            <div class="post-detail">Herramientas utilizadas</div>
-        </div>
+      <h1 class="post-title">
+        Pagina de proyecto con ID {{ $route.params.id }}
+      </h1>
+      <div class="post-details">
+        <div class="post-detail">Descripción</div>
+        <div class="post-detail">Herramientas utilizadas</div>
+      </div>
     </section>
     <section class="post-feedback">
-        <p>Ultima actualización  </p>
+      <p>Ultima actualización</p>
     </section>
-    
-
-</div>
-
-
+  </div>
 </template>
 
 <script>
 export default {
-    /** valida que el id sea un número */
-        validate(data){
-            console.log(data)
-            return /^\d+$/.test(data.params.id)
-            
-        }
+  props: {
+    id: Number,
+  },
+  mounted() {
+    console.log(props)
+  },
+  /** valida que el id sea un número */
+  validate(data) {
+    // return console.log('data', data)
+    return /^\d+$/.test(data.params.id)
+  },
 }
 </script>
 
 <style>
 .single-post-page {
-  background-color: #eee1bb;
   margin: 40px 0;
   padding: 30px;
   text-align: center;

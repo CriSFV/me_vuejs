@@ -1,25 +1,10 @@
 <template>
   <div class="post-project">
     <nuxt-link :to="'/projects/' + id" class="post-preview">
-      <article style="margin: 10px">
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <span class="stars"></span>
-              <h2 class="java">{{ title }}</h2>
-              <p class="java">{{ previewText }}</p>
-            </div>
-          </div>
-          <div class="face face2">
-            <h2>{{ title }}</h2>
-          </div>
-        </div>
-
-        <div class="post-thumbnail"></div>
-        <div class="post-content">
-          <h1>{{ title }}</h1>
-          <h1>{{ previewText }}</h1>
-        </div>
+      <article class="card">
+        <h2 class="card__title">{{ title }}</h2>
+        <img :src="srcImage" :alt="'Project'[title]" class="card__thumbnail" />
+        <p class="post-content">{{ previewText }}</p>
       </article>
     </nuxt-link>
   </div>
@@ -29,7 +14,7 @@
 export default {
   props: {
     id: {
-      type: String,
+      type: Number,
       required: true,
     },
     title: {
@@ -44,50 +29,15 @@ export default {
       type: String,
       required: false,
     },
+    srcImage: {
+      type: String,
+      default: '/assets/images/editorimg.jpg',
+    },
   },
 }
 </script>
 
 
-<style lang="scss" scoped>
-@import '@/assets/styles/projects.scss';
-.post-preview {
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 2px #ccc;
-  background-color: white;
-  width: 90%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-@media (min-width: 850px) {
-  .post-preview {
-    width: 400px;
-    margin: 10px;
-  }
-}
-
-.post-thumbnail {
-  width: 100%;
-  height: 200px;
-  background-color: lightblue;
-  background-image: url(~assets/images/editorimg.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.post-content {
-  padding: 10px;
-  text-align: center;
-}
-
-a:hover .post-content,
-a:active .post-content {
-  background-color: #eee1bb;
-  text-decoration: none;
-  color: #273bec;
-}
+<style lang="sass" scoped>
+@import '@/assets/styles/projects.sass'
 </style>

@@ -4,21 +4,19 @@
       <div class="hero__content__photo">
         <img
           class="hero__photo"
-          src="@/assets/images/editorimg.jpg"
+          src="/assets/images/editorimg.jpg"
           alt="this is me"
         />
       </div>
-      <h1 class="hero__title">¡¡Hola!!</h1>
-      <h2 class="hero__subtitle">Soy Yo</h2>
+      <h2 class="hero__title">¡¡Hola!!</h2>
+      <h1 class="hero__subtitle">Soy Cris F. Valverde</h1>
+      <h3 class="hero__subtitle2">Front-End Developer</h3>
 
       <article class="hero__info">
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
-          delectus quo voluptatem eveniet provident sed culpa atque quis, et
-          dolor. Ad modi fuga soluta, in assumenda reprehenderit nostrum unde
-          quisquam?Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Reiciendis nesciunt ad ducimus totam amet harum repellat! Voluptatum,
-          nam.
+          Apasionada de la vida y de la gente. Muchos años gestionando grupos me
+          han ayudado a trabajar mejor en equipo, contribuyendo al desarrollo de
+          las personas.
         </p>
       </article>
     </div>

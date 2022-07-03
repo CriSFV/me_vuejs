@@ -1,7 +1,9 @@
 /**footer utilizado en todo el proyecto */
 <template>
   <footer class="footer" id="contact">
-    <small class="footer__copy"> Cris F. Valverde @ {{ year }} </small>
+    <small class="footer__copy">
+      Cris F. Valverde <i class="fab fa-gratipay"></i> {{ year }}
+    </small>
   </footer>
 </template>
 
@@ -16,6 +18,6 @@ export default {
 }
 </script>
 
-<style>
-@import '@/assets/styles/footer.scss';
+<style lang="sass">
+@import '@/assets/styles/footer.sass'
 </style>

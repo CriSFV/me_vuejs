@@ -10,14 +10,18 @@
 export default {
   layout: 'default',
   name: 'AboutMe',
+  components: {
+    AppHeader: () => import('../components/Navigation/AppHeader.vue'),
+    AppFooter: () => import('../components/AppFooter.vue'),
+  },
 }
 </script>
 
 
 <style>
-.posts-page {
+/* .posts-page {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 </style>
