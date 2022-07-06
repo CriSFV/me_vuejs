@@ -2,7 +2,9 @@
 <template>
   <footer class="footer" id="contact">
     <small class="footer__copy">
-      Cris F. Valverde <i class="fab fa-gratipay"></i> {{ year }}
+      Made with <i class="fas fa-heart"></i> by Cris F. Valverde
+      <!-- <i class="fab fa-gratipay"></i> -->
+      {{ year }}
     </small>
   </footer>
 </template>
