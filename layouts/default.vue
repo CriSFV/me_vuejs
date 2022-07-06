@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <AppHeader />
     <nuxt />
     <AppFooter />
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-body {
+.body {
   font-family: 'Roboto', sans-serif;
 }
 </style>

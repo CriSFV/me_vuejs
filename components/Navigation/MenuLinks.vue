@@ -1,8 +1,8 @@
 <template>
   <nav class="home">
-    <nuxt-link class="header__link__home" to="/">
+    <a class="header__link__home" href="/">
       <i class="fas fa-home"></i>
-    </nuxt-link>
+    </a>
     <b-dropdown class="m-2 menu__button" text="Menu" variant="#eee1bb" dropleft>
       <b-dropdown-item variant="#eee1bb" class="header__link" to="/projects"
         >Proyectos</b-dropdown-item

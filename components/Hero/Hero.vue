@@ -9,8 +9,8 @@
         />
       </div>
       <h2 class="hero__title">¡¡Hola!!</h2>
-      <h1 class="hero__subtitle">Soy Cris F. Valverde</h1>
-      <h3 class="hero__subtitle2">Front-End Developer</h3>
+      <h1 class="hero__subtitle">Soy Cris, Front-End Developer</h1>
+      <h3 class="hero__subtitle">Creadora de experiencias digitales</h3>
 
       <article class="hero__info">
         <p>
@@ -18,6 +18,26 @@
           han ayudado a trabajar mejor en equipo, contribuyendo al desarrollo de
           las personas.
         </p>
+        <p>
+          Me gusta la tecnología y aprender cosas nuevas, además de trabajar en
+          equipo.
+        </p>
+        <div class="btn-container">
+          <b-button class="hero__btn" v-b-modal.modal-1>Comenzar</b-button>
+        </div>
+      </article>
+      <article>
+        <b-modal
+          id="modal-1"
+          title="¿Por donde quieres empezar?"
+          hide-footer
+          centered
+          no-close-on-esc
+        >
+          <a class="header__link" href="/aboutme"> Cónoceme </a>
+          <a class="header__link" href="/projects"> Proyectos </a>
+          <a class="header__link" href="/contact"> Contacto </a>
+        </b-modal>
       </article>
     </div>
   </section>
@@ -26,6 +46,10 @@
 <script>
 export default {
   name: 'Hero',
+  data() {
+    return {}
+  },
+  methods: {},
 }
 </script>
 

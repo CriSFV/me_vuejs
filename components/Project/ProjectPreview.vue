@@ -1,12 +1,12 @@
 <template>
   <div class="post-project">
-    <nuxt-link :to="'/projects/' + id" class="post-preview">
+    <a :href="/projects/[id]" class="post-preview">
       <article class="card">
         <h2 class="card__title">{{ title }}</h2>
         <img :src="srcImage" :alt="'Project'[title]" class="card__thumbnail" />
         <p class="post-content">{{ previewText }}</p>
       </article>
-    </nuxt-link>
+    </a>
   </div>
 </template>
 

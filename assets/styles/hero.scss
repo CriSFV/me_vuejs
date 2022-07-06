@@ -2,7 +2,16 @@
 
 .hero {
     height: 95vh;
+}
 
+.hero__btn {
+    background-color: $principal-middle;
+    border-radius: 15px;
+    width: 155px;
+}
+
+.btn-container {
+    text-align: center;
 }
 
 .hero__content {
@@ -16,9 +25,9 @@
 }
 
 .hero__photo {
-    width: 30vw;
-    height: 30vh;
-    border-radius: 15%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .hero__title {
@@ -37,6 +46,22 @@
 .hero__info {
     margin-top: 1em;
     text-align: justify;
+    padding: 30px;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        width: 150px;
+        height: 40px;
+    }
+
+    a:hover {
+        color: $principal-light;
+        text-decoration: none;
+    }
 }
 
 @media (min-width: 500) {

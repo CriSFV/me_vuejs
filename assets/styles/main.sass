@@ -1,0 +1,32 @@
+@import './projects.sass'
+@import './hero.scss'
+@import './footer.sass'
+@import './headerStyle.scss'
+
+body
+    font-family: $principal-font-family
+    background: radial-gradient(#E892BF, #ffff)
+
+.menu__button
+    background-color: $principal-middle !important
+    border-radius: 15px
+    button
+        border-radius: 15px
+        &:hover
+            background-color: $principal-dark
+            color: $principal-light
+.generalContainer
+    padding: 4rem 3rem 4rem 3rem
+    width: 100vw
+.btn-principal
+    background-color: $principal-middle
+    border-radius: 15px
+    width: 155px
+    height: 50px
+    color: $principal-letters !important
+    border: none
+    transition: transform ease 0.5s
+    &:hover
+        background-color: $principal-dark
+        color: $principal-light !important
+        transform: scale(1.01)

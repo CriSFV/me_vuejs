@@ -32,7 +32,7 @@ export default {
 
 
   // Global CSS: https://go.nuxtjs.dev/config-css. no funciona con @ solo con ~/
-  css: ['@/assets/styles/main.scss'],
+  css: ['@/assets/styles/main.sass'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],

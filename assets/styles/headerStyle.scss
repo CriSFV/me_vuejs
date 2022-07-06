@@ -5,7 +5,7 @@
     position: fixed;
     height: 10vh;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-image: $principal-dark  !important;
     z-index: 100;
     font-size: 5px;
@@ -28,8 +28,13 @@
 }
 
 .menu__button {
-    background-color: #ec9bc6 !important;
+    background-color: $principal-middle  !important;
     border-radius: 15px;
+}
+
+.menu__button:hover {
+    background-color: $principal-dark  !important;
+    color: $principal-light  !important;
 }
 
 .header__link {
