@@ -1,7 +1,7 @@
 <template>
   <div class="generalContainer">
-    <section>
-      <h1>Esta soy yo:</h1>
+    <section class="mb-5">
+      <h1 class="mb-4">Esta soy yo:</h1>
       <p>
         Estudié Educación Social hasta que, haciendo las prácticas de la
         carrera, vi que no era lo mío, así que me puse a trabajar en el sector
@@ -9,18 +9,34 @@
         equipos en diferentes campañas y a distintos niveles.
       </p>
       <p>
-        Después de unos años allí, me dí cuenta de que necesitaba mejorar mi
-        formación y ampliar horizontes.
+        Después de unos años allí, quise mejorar mi formación y ampliar
+        horizontes por lo que me surgió una oportunidad que no deje escapar.
       </p>
       <p>
         Siempre me había llamado la atención el tema de la programación y, tras
         dejarme aconsejar por amigos que conocían mis expectativas y
         capacidades, encontré Adalab, realicé su bootcamp y aquí estoy hoy,
-        reinventada como Desarrolladora Front-End
+        reinventada como Desarrolladora Front-End y dispuesta a aportar valor en
+        cualquier equipo en el que me encuentre.
       </p>
     </section>
-    <section class="aboutMe-section">
-      <h3>Habilidades:</h3>
+    <section class="mb-5">
+      <h3>Aptitudes:</h3>
+      <ul>
+        <li>Alta capacidad de trabajo en equipo</li>
+        <li>Trabajo bajo presión y con tiempos limitados</li>
+        <li>Organización y adaptación a los cambios</li>
+        <li>Autonomía</li>
+        <li>Comunicación efectiva</li>
+        <li>Filosofía Agile y marco de trabajo Scrum</li>
+        <li>
+          Planificación y gestión eficiente de tiempo y grandes volumenes de
+          trabajo
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Competencias:</h3>
       <ul class="tagList">
         <li v-for="(tag, idxTag) in icons" :key="idxTag" class="tagList-item">
           <span class="tag">
@@ -30,14 +46,15 @@
         </li>
       </ul>
     </section>
-    <button
+
+    <!-- <button
       download
       @click="downloadPdf"
       href="/Pdfs/cfv_CV_Spanish.pdf"
       class="btn-principal"
     >
       Pulsa para ver CV
-    </button>
+    </button> -->
   </div>
 </template>
 
@@ -72,25 +89,25 @@ export default {
 <style lang="sass">
 @import '@/assets/styles/main.sass'
 .aboutMe-section
-    margin-top: 100px
+  margin-top: 100px
 .tagList
-    list-style-type: none
-    padding: 30px
-    display: flex
-    flex-wrap: wrap
-    .tagList-item
-        line-height: 30px
-        width: 150px
-        height: 50px
-        padding: 10px
-        background-color: #EBA3C9
-        margin: 10px
-        border-radius: 20%
-        border: 1px solid #e24f9e
-        &:hover
-            transform: scale(1.2)
+  list-style-type: none
+  padding: 30px
+  display: flex
+  flex-wrap: wrap
+  .tagList-item
+    line-height: 30px
+    width: 150px
+    height: 50px
+    padding: 10px
+    background-color: #EBA3C9
+    margin: 10px
+    border-radius: 20%
+    border: 1px solid #e24f9e
+    &:hover
+      transform: scale(1.2)
 
 .tagIcon
-    font-size: 1.5rem
-    margin-right: 10px
+  font-size: 1.5rem
+  margin-right: 10px
 </style>
