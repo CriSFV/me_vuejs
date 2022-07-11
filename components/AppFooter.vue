@@ -1,6 +1,6 @@
 /**footer utilizado en todo el proyecto */
 <template>
-  <footer class="footer" id="contact">
+  <footer class="footer">
     <p class="footer__copy">
       Made with <i class="fas fa-heart"></i> by Cris F. Valverde
       <!-- <i class="fab fa-gratipay"></i> -->

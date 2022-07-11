@@ -1,9 +1,7 @@
 // https://codepen.io/frgo/details/povZZVm
 
 <template>
-  <div>
-    <Hero />
-  </div>
+  <Hero />
 </template>
 
 <script>
