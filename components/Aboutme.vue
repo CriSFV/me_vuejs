@@ -1,5 +1,5 @@
 <template>
-  <div class="generalContainer">
+  <div>
     <section class="mb-5">
       <h1 class="mb-4">Esta soy yo:</h1>
       <p>
@@ -104,9 +104,12 @@ export default {
     margin: 10px
     border-radius: 20%
     border: 1px solid #e24f9e
+    transition: all ease .50s
     &:hover
-      transform: scale(1.2)
-
+      transform: scale(1.02)
+.generalContainer
+  padding: 4rem 3rem 4rem 3rem
+  width: 100vw
 .tagIcon
   font-size: 1.5rem
   margin-right: 10px

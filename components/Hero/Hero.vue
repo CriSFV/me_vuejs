@@ -1,5 +1,5 @@
 <template>
-  <section class="hero__content" id="home">
+  <section class="generalContainer hero__content" id="home">
     <div class="hero__content__photo">
       <img
         class="hero__photo"
@@ -8,13 +8,13 @@
       />
     </div>
     <h2 class="hero__title">¡¡Hola!!</h2>
-    <h1 class="hero__subtitle">Soy Cris, Front-End Developer</h1>
+    <h2 class="hero__subtitle hero__name">Soy Cris, Front-End Developer</h2>
     <h3 class="hero__subtitle">Creadora de experiencias digitales</h3>
 
     <article class="hero__info">
       <h5>¡Gracias por haber llegado hasta aquí!</h5>
       <p>
-        Apasionada de la vida y de la gente. Muchos años gestionando grupos me
+        Apasionada de la vida y de la gente, muchos años gestionando grupos me
         han ayudado a trabajar mejor en equipo, contribuyendo al desarrollo de
         las personas.
       </p>
@@ -26,19 +26,17 @@
         <b-button class="hero__btn" v-b-modal.modal-1>Comenzar</b-button>
       </div>
     </article>
-    <article>
-      <b-modal
-        id="modal-1"
-        title="¿Por donde quieres empezar?"
-        hide-footer
-        centered
-        no-close-on-esc
-      >
-        <a class="header__link" href="/aboutme"> Cónoceme </a>
-        <a class="header__link" href="/projects"> Proyectos </a>
-        <a class="header__link" href="/contact"> Contacto </a>
-      </b-modal>
-    </article>
+    <b-modal
+      id="modal-1"
+      title="¿Por donde quieres empezar?"
+      hide-footer
+      centered
+      no-close-on-esc
+    >
+      <a class="header__link" href="/aboutme"> Cónoceme </a>
+      <a class="header__link" href="/projects"> Proyectos </a>
+      <a class="header__link" href="/contact"> Contacto </a>
+    </b-modal>
   </section>
 </template>
 
@@ -52,6 +50,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '@/assets/styles/hero.scss';
 </style>

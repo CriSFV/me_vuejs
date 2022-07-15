@@ -36,11 +36,12 @@
 
 
 <script>
-import ProjectPreview from '~/components/Project/ProjectPreview.vue'
+// import ProjectPreview from '~/components/Project/ProjectPreview.vue'
 
 export default {
   components: {
-    ProjectPreview,
+    ProjectPreview: () => import('~/components/Project/ProjectPreview.vue'),
+    // ProjectPreview,
   },
   data() {
     return {
