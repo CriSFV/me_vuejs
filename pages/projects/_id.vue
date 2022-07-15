@@ -5,7 +5,9 @@
     <section class="post">
       <h1 class="post-title">Title de proyecto:{{ $route.params.title }}</h1>
       <div class="post-details">
-        <div class="post-detail">Descripción</div>
+        <div class="post-detail">
+          <p>Descripción</p>
+        </div>
         <div class="post-detail">Herramientas utilizadas</div>
       </div>
     </section>

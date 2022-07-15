@@ -29,9 +29,11 @@
     <b-modal
       id="modal-1"
       title="¿Por donde quieres empezar?"
+      size="lg"
       hide-footer
       centered
       no-close-on-esc
+      no-close-on-backdrop
     >
       <a class="header__link" href="/aboutme"> Cónoceme </a>
       <a class="header__link" href="/projects"> Proyectos </a>
