@@ -15,33 +15,15 @@
           :srcImage="item.img"
         />
       </div>
-      <!-- <ProjectPreview
-        id="1"
-        title="nombre proyecto 1"
-        previewText="breve descripción del proyecto"
-      />
-      <ProjectPreview
-        id="2"
-        title="nombre proyecto2"
-        previewText="breve descripción del proyecto"
-      />
-      <ProjectPreview
-        id="3"
-        title="nombre proyecto 3"
-        previewText="breve descripción del proyecto"
-      /> -->
     </section>
   </div>
 </template>
 
 
 <script>
-// import ProjectPreview from '~/components/Project/ProjectPreview.vue'
-
 export default {
   components: {
     ProjectPreview: () => import('~/components/Project/ProjectPreview.vue'),
-    // ProjectPreview,
   },
   data() {
     return {
