@@ -1,9 +1,16 @@
 <template>
-  <nav class="home">
+  <nav class="home" id="header">
     <a class="header__link__home" href="/">
       <i class="fas fa-home"></i>
     </a>
-    <b-dropdown class="m-2 menu__button" text="Menu" variant="#eee1bb" dropleft>
+
+    <b-dropdown
+      class="m-2 menu__button"
+      text="Menu"
+      variant="#eee1bb"
+      dropleft
+      no-caret
+    >
       <b-dropdown-item variant="#eee1bb" class="header__link" to="/projects"
         >Proyectos</b-dropdown-item
       >

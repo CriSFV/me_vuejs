@@ -18,5 +18,8 @@ export default {
 <style>
 .body {
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 </style>
