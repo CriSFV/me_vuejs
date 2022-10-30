@@ -2,13 +2,12 @@
 
 .header {
     font-weight: 600;
-    position: fixed;
-    height: 10vh;
+    height: 13vh;
     top: 0;
     width: 100%;
     z-index: 100;
     font-size: 5px;
-    background-color: $footerBackground;
+    border-bottom: 3px solid $principal-color;
 }
 
 .icons {
@@ -19,7 +18,7 @@
     font-size: 35px;
     position: relative;
     left: 10px;
-    color: #ec9bc6;
+    color: $principal-color;
     text-decoration: none;
 }
 
@@ -34,16 +33,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background-color: $headerFooterBg;
+    transform: translateY(10px);
 
     @media (min-width: 992px) {
         flex-direction: row !important;
         align-items: center;
         justify-content: flex-end;
+        background-color: transparent;
     }
 }
 
 .header__link {
-    background-image: linear-gradient(#EBA3C9, #ecc7db);
+    color: $light-color;
     border-radius: 15px;
     text-decoration: none;
     text-align: center;
@@ -54,7 +56,7 @@
 }
 
 .header__link a {
-    color: $principal-letters
+    color: $principal-dark
 }
 
 .dropdown-item:hover {
@@ -66,7 +68,7 @@
 }
 
 .dropdown-item {
-    color: $principal-letters;
+    color: $principal-dark;
 }
 
 .dropdown-menu.show {

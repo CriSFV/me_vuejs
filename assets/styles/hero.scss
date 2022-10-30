@@ -13,18 +13,36 @@
 
 .btn-container {
     text-align: center;
+    margin: 30px 0 0 0;
 }
 
 .hero__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 90px 30px 0px 40px;
+    justify-content: center;
+    padding: 60px 10px 0px 15px;
     height: 100%;
-    color: $principal-letters;
+    color: $principal-dark;
+    font-size: 14px;
 
     &__photo {
         margin-bottom: 20px;
+    }
+}
+
+.hero__content_presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    @media (min-width: 768px) {
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
     }
 }
 
@@ -45,7 +63,7 @@
 }
 
 .hero__name {
-    color: $colorTitles;
+    color: $principal-color;
 }
 
 .hero__subtitle2 {
@@ -69,7 +87,7 @@
     }
 
     a:hover {
-        color: $principal-light;
+        color: $principal-color;
         text-decoration: none;
     }
 }

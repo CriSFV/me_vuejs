@@ -1,15 +1,19 @@
 <template>
-  <section class="generalContainer hero__content" id="home">
-    <div class="hero__content__photo">
-      <img
-        class="hero__photo"
-        src="/assets/images/editorimg.jpg"
-        alt="this is me"
-      />
-    </div>
-    <h2 class="hero__title">¡¡Hola!!</h2>
-    <h2 class="hero__subtitle hero__name">Soy Cris, Front-End Developer</h2>
-    <h3 class="hero__subtitle">Creadora de experiencias digitales</h3>
+  <div class="generalContainer hero__content" id="home">
+    <section class="hero__content_presentation">
+      <div class="hero__content__photo">
+        <img
+          class="hero__photo"
+          src="/assets/images/editorimg.jpg"
+          alt="this is me"
+        />
+      </div>
+      <div>
+        <h2 class="hero__title">¡¡Hola!!</h2>
+        <h2 class="hero__subtitle hero__name">Soy Cris, Front-End Developer</h2>
+        <h3 class="hero__subtitle">Creadora de experiencias digitales</h3>
+      </div>
+    </section>
 
     <article class="hero__info">
       <h5>¡Gracias por haber llegado hasta aquí!</h5>
@@ -23,7 +27,7 @@
         mejor!!
       </p>
       <div class="btn-container">
-        <b-button class="hero__btn" v-b-modal.modal-1>Comenzar</b-button>
+        <b-button class="btn-principal" v-b-modal.modal-1>Comenzar</b-button>
       </div>
     </article>
     <b-modal
@@ -35,11 +39,19 @@
       no-close-on-esc
       no-close-on-backdrop
     >
-      <a class="header__link" href="/aboutme"> Cónoceme </a>
-      <a class="header__link" href="/projects"> Proyectos </a>
-      <a class="header__link" href="/contact"> Contacto </a>
+      <ul class="list_decoration column-row">
+        <li class="header__link">
+          <a href="/aboutme" class="nav_link"> Cónoceme </a>
+        </li>
+        <li class="header__link">
+          <a href="/projects" class="nav_link"> Proyectos </a>
+        </li>
+        <li class="header__link">
+          <a href="/contact" class="nav_link"> Contacto </a>
+        </li>
+      </ul>
     </b-modal>
-  </section>
+  </div>
 </template>
 
 <script>

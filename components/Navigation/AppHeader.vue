@@ -1,10 +1,10 @@
 <template>
   <header class="header" id="header">
     <!-- <MenuLinks /> -->
-    <b-navbar sticky toggleable="lg" class="header">
+    <b-navbar toggleable="lg" class="header">
       <b-navbar-brand>
         <a class="header__link__home" href="/">
-          <i class="fas fa-home"></i>
+          <i class="fas fa-heart"></i>
         </a>
       </b-navbar-brand>
       <div
@@ -12,10 +12,12 @@
         :class="{ hide: scrollPosition < 300, goUp: scrollPosition > 300 }"
         @click="goUp"
       >
-        <span><i class="fas fa-angle-up icons" /></span>
+        <span style="vertical-align: middle"
+          ><i class="fas fa-angle-up icons"
+        /></span>
       </div>
       <b-navbar-toggle target="nav-collapse" />
-      <b-collapse id="nav-collapse" is-nav right class="menu__button">
+      <b-collapse id="nav-collapse" is-nav class="menu__button">
         <b-nav-item variant="#eee1bb" class="header__link" to="/projects">
           <span> Proyectos </span>
         </b-nav-item>
@@ -75,6 +77,9 @@ export default {
   color: #666
   opacity: 0.7
   border-radius: 2px
+  display: flex
+  justify-content: center
+  align-items: center
   @media (min-width: 992px)
     bottom: 14%
     right: 50px

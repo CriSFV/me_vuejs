@@ -3,8 +3,12 @@
 @import './footer.sass'
 @import './headerStyle.scss'
 
+html
+  scroll-behavior: smooth
 body
-    background: radial-gradient(#E892BF, #ffff)
+  background: #f7f7f7
+  p
+    margin: 0
     // background: radial-gradient(#E892BF, #ffff)
 
 // .menu__button
@@ -16,16 +20,29 @@ body
 //             background-color: $principal-dark
 //             color: $principal-light
 .generalContainer
-    padding: 4rem 3rem 4rem 3rem
+  padding: 4rem 3rem 4rem 3rem
 .btn-principal
-    background-color: $principal-middle
-    border-radius: 15px
-    width: 155px
-    height: 50px
-    color: $principal-letters !important
-    border: none
-    transition: transform ease 0.5s
-    &:hover
-        background-color: $principal-dark
-        color: $principal-light !important
-        transform: scale(1.01)
+  background-color: $principal-color
+  border-radius: 5px
+  width: 155px
+  height: 30px
+  line-height: 15px
+  color: $light-color !important
+  border: none
+  transition: transform ease 0.5s
+  &:hover
+    background-color: $principal-dark
+    color: $principal-light !important
+.list_decoration
+  list-style-type: none
+  padding: 0
+  margin-bottom: 0
+.column-row
+  display: flex
+  flex-direction: column
+  @media (min-width: 576px)
+    flex-direction: row
+    justify-content: space-around
+    width: 100%
+.nav_link:hover
+  color: $principal-color
