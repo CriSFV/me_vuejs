@@ -3,14 +3,16 @@
     <section class="hero__content_presentation">
       <div class="hero__content__photo">
         <img
-          class="hero__photo"
+          class="hero__photo fade-in"
           src="/assets/images/editorimg.jpg"
           alt="this is me"
         />
       </div>
       <div>
         <h2 class="hero__title">¡¡Hola!!</h2>
-        <h2 class="hero__subtitle hero__name">Soy Cris, Front-End Developer</h2>
+        <h2 class="hero__subtitle hero__name fade-in">
+          Soy Cris, Front-End Developer
+        </h2>
         <h3 class="hero__subtitle">Creadora de experiencias digitales</h3>
       </div>
     </section>
