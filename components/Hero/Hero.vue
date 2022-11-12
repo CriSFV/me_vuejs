@@ -13,7 +13,11 @@
         <h2 class="hero__subtitle hero__name fade-in">
           Soy Cris, Front-End Developer
         </h2>
-        <h3 class="hero__subtitle">Creadora de experiencias digitales</h3>
+        <div class="fade-in">
+          <i class="far fa-smile-beam icon giro"></i>
+          <span class="hero__subtitle">Creadora de experiencias digitales</span>
+          <i class="far fa-smile-beam icon giro"></i>
+        </div>
       </div>
     </section>
 
@@ -25,7 +29,7 @@
         las personas.
       </p>
       <p>
-        Me gusta la tecnología y aprender cosas nuevas, y si es en equipo,
+        Me gusta la tecnología y aprender cosas nuevas, y si es en equipo, mucho
         mejor!!
       </p>
       <div class="btn-container">
@@ -68,4 +72,7 @@ export default {
 
 <style lang="scss" >
 @import '@/assets/styles/hero.scss';
+.icon {
+  font-size: 30px;
+}
 </style>

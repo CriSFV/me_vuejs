@@ -1,7 +1,7 @@
 <template>
   <header class="header" id="header">
     <!-- <MenuLinks /> -->
-    <b-navbar toggleable="lg" class="header">
+    <b-navbar toggleable="sm" class="header">
       <b-navbar-brand>
         <a class="header__link__home" href="/">
           <i class="fas fa-heart"></i>
@@ -21,10 +21,10 @@
         <b-nav-item variant="#eee1bb" class="header__link" to="/projects">
           <span> Proyectos </span>
         </b-nav-item>
-        <b-nav-item variant="#eee1bb" class="header__link" to="/projects">
+        <b-nav-item variant="#eee1bb" class="header__link" to="/aboutme">
           <span> Sobre mi </span>
         </b-nav-item>
-        <b-nav-item variant="#eee1bb" class="header__link" to="/projects">
+        <b-nav-item variant="#eee1bb" class="header__link" to="/contact">
           <span> Contacto </span>
         </b-nav-item>
       </b-collapse>
@@ -72,7 +72,6 @@ export default {
   width: 40px
   height: 40px
   text-align: center
-  line-height: 40px
   background: #ddd
   color: #666
   opacity: 0.7

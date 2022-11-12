@@ -2,9 +2,10 @@
 <template>
   <footer class="footer">
     <p class="footer__copy">
-      Made with <i class="fas fa-heart"></i> by Cris F. Valverde
+      <span> Made with</span> <i class="fas fa-heart"></i>
+      <span>by Cris F. Valverde</span>
       <!-- <i class="fab fa-gratipay"></i> -->
-      {{ year }}
+      <span>{{ year }}</span>
     </p>
   </footer>
 </template>

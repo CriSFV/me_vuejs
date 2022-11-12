@@ -9,7 +9,6 @@ export default {
   components: {
     Proyects: () => import('~/components/Project/projects.vue'),
   },
-  layout: 'default',
 }
 </script>
 

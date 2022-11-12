@@ -6,7 +6,6 @@
 
 <script>
 export default {
-  layout: 'default',
   components: {
     Hero: () => import('../components/Hero/Hero.vue'),
   },

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <AppHeader />
     <!-- <p> hoja proyectos principal y común a todos los proyectos en las paginas numeradas</p> -->
     <nuxt-child />
   </div>

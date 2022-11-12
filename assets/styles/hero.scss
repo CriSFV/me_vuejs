@@ -8,9 +8,39 @@
         opacity: 0;
     }
 
+    50% {
+        opacity: 0.5;
+    }
+
     100% {
         opacity: 1
     }
+}
+
+@keyframes giro {
+    from {
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    75% {
+        transform: rotateZ(270deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.giro {
+    animation: giro linear 3s infinite;
 }
 
 .fade-in {
@@ -34,7 +64,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 10px 0px 15px;
+    padding: 30px 10px;
     height: 100%;
     color: $principal-dark;
     font-size: 14px;

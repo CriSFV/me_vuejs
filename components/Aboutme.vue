@@ -10,14 +10,16 @@
       </p>
       <p>
         Después de unos años allí, quise mejorar mi formación y ampliar
-        horizontes por lo que me surgió una oportunidad que no deje escapar.
+        horizontes, surgió una oportunidad y no la dejé escapar.
       </p>
       <p>
         Siempre me había llamado la atención el tema de la programación y, tras
         dejarme aconsejar por amigos que conocían mis expectativas y
-        capacidades, encontré Adalab, realicé su bootcamp y aquí estoy hoy,
-        reinventada como Desarrolladora Front-End y dispuesta a aportar valor en
-        cualquier equipo en el que me encuentre.
+        capacidades, encontré
+        <a href="https://www.adalab.es" target="_blank"><u>Adalab</u></a
+        >, realicé su bootcamp y aquí estoy hoy, reinventada como Desarrolladora
+        Front-End y dispuesta a aportar valor en cualquier equipo en el que me
+        encuentre.
       </p>
     </section>
     <section class="mb-5">
@@ -65,12 +67,12 @@ export default {
       icons: [
         { icon: 'fas fa-code', name: 'Code' },
         { icon: 'fab fa-html5', name: 'HTML' },
+        { icon: 'fab fa-js-square', name: 'JavaScript' },
+        { icon: 'fab fa-vuejs', name: 'Vue' },
         { icon: 'fab fa-css3', name: 'CSS3' },
         { icon: 'fab fa-sass', name: 'SASS' },
         { icon: 'fab fa-bootstrap', name: 'BOOTSTRAP' },
-        { icon: 'fab fa-js-square', name: 'JavaScript' },
         { icon: 'fab fa-react', name: 'React' },
-        { icon: 'fab fa-vuejs', name: 'Vue' },
         { icon: 'fab fa-git-square', name: 'Git' },
         { icon: 'fab fa-github', name: 'GitHub' },
         { icon: 'fab fa-gitkraken', name: 'Gitkraken' },
@@ -96,15 +98,19 @@ export default {
   display: flex
   flex-wrap: wrap
   .tagList-item
+    display: flex
+    justify-content: center
+    align-items: center
     line-height: 30px
     width: 150px
     height: 50px
     padding: 10px
-    background-color: #EBA3C9
+    background-color: $principal-color
     margin: 10px
-    border-radius: 20%
-    border: 1px solid #e24f9e
+    border-radius: 20px
+    border: 1px solid $principal-light
     transition: all ease .50s
+    color: $principal-light
     &:hover
       transform: scale(1.02)
 .generalContainer

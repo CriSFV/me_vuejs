@@ -11,6 +11,7 @@
 </template>
 
 <script>
+// previiew projects
 export default {
   props: {
     id: {
@@ -31,6 +32,9 @@ export default {
       type: String,
       default: '/assets/images/editorimg.jpg',
     },
+  },
+  mounted() {
+    console.log(this.id, this.title, this.previewText)
   },
 }
 </script>

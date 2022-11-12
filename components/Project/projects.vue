@@ -7,7 +7,7 @@
       <!-- <ProjectPreview :allProjects="data_projects" /> -->
       <div v-for="(item, indx) of data_projects" :key="indx">
         <ProjectPreview
-          :id="indx"
+          :id="item.id"
           :title="item.title"
           :previewText="item.comment"
           :srcImage="item.img"
@@ -118,40 +118,40 @@ export default {
     }
   },
   mounted() {
-    console.log(this.data_projects)
+    console.log('data_projects:', this.data_projects)
   },
 }
 </script>
 
 <style lang="sass">
 .intro
-    height: 35px
-    margin: 60px
-    position: relative
-    padding: 30px
-    box-sizing: border-box
-    background-position: center
-    background-size: cover
-    text-align: center
+  height: 35px
+  margin: 60px
+  position: relative
+  padding: 30px
+  box-sizing: border-box
+  background-position: center
+  background-size: cover
+  text-align: center
 .intro h1
-    position: absolute
-    left: 5%
-    width: 90%
-    font-size: 1.5rem
-    color: #413b42
-    padding: 10px
-    border-radius: 20px
-    box-shadow: 3px 3px 3px black
-    box-sizing: border-box
-    border: 1px solid black
+  position: absolute
+  left: 5%
+  width: 90%
+  font-size: 1.5rem
+  color: #413b42
+  padding: 10px
+  border-radius: 20px
+  box-shadow: 3px 3px 3px black
+  box-sizing: border-box
+  border: 1px solid black
 @media (min-width: 768px)
 .intro h1
-    font-size: 2rem
+  font-size: 2rem
 .featured-posts
-    display: flex
-    padding: 20px
-    box-sizing: border-box
-    flex-wrap: wrap
-    align-items: center
-    justify-content: center
+  display: flex
+  padding: 20px
+  box-sizing: border-box
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
 </style>

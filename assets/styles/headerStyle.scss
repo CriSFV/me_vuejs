@@ -2,7 +2,7 @@
 
 .header {
     font-weight: 600;
-    height: 13vh;
+    height: fit-content;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -11,7 +11,7 @@
 }
 
 .icons {
-    font-size: 16px;
+    font-size: 20npm rupx;
 }
 
 .header__link__home {
@@ -27,20 +27,22 @@
     justify-content: space-between;
 }
 
+.navbar-collapse {
+    justify-content: end;
+}
+
 .menu__button {
     border-radius: 15px;
+    width: 500px;
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: $headerFooterBg;
-    transform: translateY(10px);
+    display: inline-block;
+    text-align: end;
+    transform: translateY(7px);
 
     @media (min-width: 992px) {
         flex-direction: row !important;
         align-items: center;
         justify-content: flex-end;
-        background-color: transparent;
     }
 }
 
