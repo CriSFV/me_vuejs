@@ -8,15 +8,15 @@
           alt="this is me"
         />
       </div>
-      <div>
+      <div class="hero_text">
         <h2 class="hero__title">¡¡Hola!!</h2>
         <h2 class="hero__subtitle hero__name fade-in">
           Soy Cris, Front-End Developer
         </h2>
         <div class="fade-in">
-          <i class="far fa-smile-beam icon giro"></i>
+          <i class="far fa-smile-beam icon giro responsive"></i>
           <span class="hero__subtitle">Creadora de experiencias digitales</span>
-          <i class="far fa-smile-beam icon giro"></i>
+          <i class="far fa-smile-beam icon giro responsive"></i>
         </div>
       </div>
     </section>
@@ -73,6 +73,20 @@ export default {
 <style lang="scss" >
 @import '@/assets/styles/hero.scss';
 .icon {
-  font-size: 30px;
+  font-size: 28px;
+  margin: 5px;
+  color: rgba(63, 94, 251, 1);
+}
+.hero_text {
+  text-align: center;
+  @media (min-width: 768px) {
+    margin: 0 0 0 10px;
+  }
+}
+.responsive {
+  display: none;
+  @media (min-width: 576px) {
+    display: inline-block;
+  }
 }
 </style>

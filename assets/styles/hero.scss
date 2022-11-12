@@ -39,8 +39,21 @@
     }
 }
 
+@keyframes cascade {
+    from {
+        transform: translateY(-500px);
+        opacity: 0
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1
+    }
+}
+
 .giro {
-    animation: giro linear 3s infinite;
+    animation: giro linear 3s infinite, cascade linear 3s;
+
 }
 
 .fade-in {
@@ -100,8 +113,10 @@
 }
 
 .hero__subtitle {
+    font-size: 20px;
+
     @media(min-width: 768px) {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
