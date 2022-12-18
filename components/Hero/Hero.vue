@@ -47,10 +47,10 @@
     >
       <ul class="list_decoration column-row">
         <li class="header__link">
-          <a href="/aboutme" class="nav_link"> Cónoceme </a>
+          <a href="/projects" class="nav_link"> Proyectos </a>
         </li>
         <li class="header__link">
-          <a href="/projects" class="nav_link"> Proyectos </a>
+          <a href="/aboutme" class="nav_link"> Cónoceme </a>
         </li>
         <li class="header__link">
           <a href="/contact" class="nav_link"> Contacto </a>

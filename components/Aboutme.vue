@@ -117,9 +117,6 @@ export default {
     color: $principal-light
     &:hover
       transform: scale(1.02)
-.generalContainer
-  padding: 4rem 3rem 4rem 3rem
-  width: 100vw
 .tagIcon
   font-size: 1.5rem
   margin-right: 10px
