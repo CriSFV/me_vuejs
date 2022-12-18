@@ -1,12 +1,10 @@
 <template>
   <div class="post-project">
-    <a :href="'/projects/' + [id]" class="post-preview">
-      <article class="card">
-        <h2 class="card__title">{{ title }}</h2>
-        <img :src="srcImage" :alt="'Project'[title]" class="card__thumbnail" />
-        <p class="post-content">{{ previewText }}</p>
-      </article>
-    </a>
+    <article class="card" @click="selectProject(id)">
+      <h2 class="card__title">{{ title }}</h2>
+      <img :src="srcImage" :alt="'Project'[title]" class="card__thumbnail" />
+      <p class="post-content">{{ previewText }}</p>
+    </article>
   </div>
 </template>
 
@@ -15,7 +13,7 @@
 export default {
   props: {
     id: {
-      type: Number,
+      type: String,
       required: true,
     },
     title: {
@@ -33,8 +31,10 @@ export default {
       default: '/assets/images/editorimg.jpg',
     },
   },
-  mounted() {
-    console.log(this.id, this.title, this.previewText)
+  methods: {
+    selectProject(item) {
+      this.$emit('selectProject', item)
+    },
   },
 }
 </script>
@@ -42,4 +42,11 @@ export default {
 
 <style lang="sass" scoped>
 @import '@/assets/styles/projects.sass'
+.post-preview
+  box-shadow: 0 2px 2px #ccc
+  width: 50%
+
+a
+  text-decoration: none
+  color: black
 </style>

@@ -2,7 +2,7 @@
   <!-- // nuxt lleva incluido los parametros, no hay que definirlos. rutas dinamicas las creamos a través de carpetas o ficheros (empieza con _) -->
 
   <div class="single-post-page">
-    <section class="post">
+    <!-- <section class="post">
       <h1 class="post-title">Título del proyecto:{{ $route.params.title }}</h1>
       <div class="post-details">
         <div class="post-detail">
@@ -13,15 +13,15 @@
     </section>
     <section class="post-feedback">
       <p>Ultima actualización</p>
-    </section>
+    </section> -->
+    <ProjectID :id="$route.params.id" />
   </div>
-  <!-- <ProjectPreview/> -->
 </template>
 
 <script>
 export default {
   components: {
-    // ProjectPreview: () => import('~/components/Project/ProjectPreview.vue')
+    ProjectID: () => import('~/components/Project/projectsId.vue'),
   },
   /** valida que el id sea un número */
   // validate(data) {

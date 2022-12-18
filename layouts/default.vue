@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <AppHeader />
+    <!-- <AppHeader /> -->
     <nuxt />
     <AppFooter />
   </div>
@@ -9,7 +9,7 @@
 <script>
 export default {
   components: {
-    AppHeader: () => import('../components/Navigation/AppHeader.vue'),
+    // AppHeader: () => import('../components/Navigation/AppHeader.vue'),
     AppFooter: () => import('../components/AppFooter.vue'),
   },
 }

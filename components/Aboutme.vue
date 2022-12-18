@@ -1,5 +1,6 @@
 <template>
   <div>
+    <section class="GoBack_container"><GoBack /></section>
     <section class="mb-5">
       <h1 class="mb-4">Esta soy yo:</h1>
       <p>
@@ -62,6 +63,9 @@
 
 <script>
 export default {
+  components: {
+    GoBack: () => import('@/components/Navigation/goback'),
+  },
   data() {
     return {
       icons: [

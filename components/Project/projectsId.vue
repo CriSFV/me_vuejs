@@ -1,69 +1,29 @@
 <template>
   <div>
-    <section class="GoBack_container"><GoBack /></section>
-    <section class="intro">
-      <span>Selecciona el proyecto que quieras</span>
+    <section class="goBack_container">
+      <span @click="goBack" class="goBack">
+        <i class="fas fa-angle-left" /> volver
+      </span>
     </section>
-    <section class="featured-posts">
-      <!-- <ProjectPreview :allProjects="data_projects" /> -->
-      <div v-for="(item, indx) of data_projects" :key="indx">
-        <ProjectPreview
-          :id="item.id"
-          :title="item.title"
-          :previewText="item.comment"
-          :srcImage="item.img"
-          @selectProject="selectProject"
-          v-b-modal.modal1
+    <section>
+      <h2 class="card__title">{{ projectToPrint.title }}</h2>
+      <article class="">
+        <img
+          :src="projectToPrint.img"
+          :alt="'Project'[projectToPrint.title]"
+          class="card__thumbnail"
         />
-      </div>
+        <p class="post-content">{{ projectToPrint.comment }}</p>
+      </article>
     </section>
-    <b-modal
-      id="modal1"
-      :title="projectSelected.title"
-      no-close-on-esc
-      hide-footer
-    >
-      <div class="body_modal">
-        <section class="body_modal_description">
-          <div class="body_modal_list">
-            <p>Herramientas utilizadas:</p>
-            <ul>
-              <li v-for="(tag, idtag) in projectSelected.tags" :key="idtag">
-                {{ tag }}
-              </li>
-            </ul>
-          </div>
-          <img
-            :src="projectSelected.img"
-            :alt="'Imagen proyecto'[projectSelected.title]"
-            class="modal_img"
-          />
-        </section>
-        <nav class="m-2">
-          <p>
-            Consultar repositorio en GitHub
-            <a :href="projectSelected.gitHub" target="_blank">Pincha aquí</a>
-          </p>
-          <p>
-            Ver web
-            <a :href="projectSelected.gitHubPages" target="_blank"
-              >Pincha aquí</a
-            >
-          </p>
-        </nav>
-      </div>
-    </b-modal>
   </div>
 </template>
 
 <script>
 export default {
-  components: {
-    GoBack: () => import('@/components/Navigation/goback'),
-  },
   data() {
     return {
-      projectSelected: {},
+      projectToPrint: {},
       data_projects: [
         {
           id: 'project4',
@@ -161,62 +121,26 @@ export default {
     }
   },
   mounted() {
-    console.log('data_projects:', this.data_projects)
+    this.loadOption()
   },
   methods: {
-    selectProject(item) {
-      console.log(item)
-      this.projectSelected = this.data_projects.find((x) => x.id === item)
+    loadOption() {
+      this.projectToPrint = this.data_projects.find(
+        (x) => x.id === this.$route.params.id
+      )
+      console.log(this.projectToPrint)
+    },
+    goBack() {
+      this.$router.push('/projects')
     },
   },
 }
 </script>
 
 <style lang="sass">
-.GoBack_container
-  margin: 15px
-.intro
-  position: relative
-  padding: 30px
-  box-sizing: border-box
-  background-position: center
-  background-size: cover
-  text-align: center
-  margin: 60px
-  height: 35px
-.intro span
-  position: absolute
-  left: 5%
-  width: 90%
-  color: #413b42
-  padding: 10px
-  border-radius: 20px
-  box-shadow: 3px 3px 3px black
-  box-sizing: border-box
-  border: 1px solid black
-  font-size: 1.2rem
-  @media (min-width: 768px)
-    font-size: 2rem
-.featured-posts
-  display: flex
-  padding: 20px
-  box-sizing: border-box
-  flex-wrap: wrap
-  align-items: center
-  justify-content: center
-.body_modal
-  display: flex
-  flex-direction: column
-  width: 100%
-  padding: 0 30px
-.body_modal_description
-  display: flex
-  flex-direction: column
-  align-items: center
-  @media(min-width: 576px)
-    flex-direction: row
-    justify-content: space-around
-.modal_img
-  width: 175px
-  border-radius: 5px
+.goBack_container
+  text-align: initial
+
+.goBack:hover
+  cursor: pointer
 </style>
