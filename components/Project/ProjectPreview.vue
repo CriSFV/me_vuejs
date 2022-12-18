@@ -3,7 +3,7 @@
     <article class="card" @click="selectProject(id)">
       <h2 class="card__title">{{ title }}</h2>
       <img :src="srcImage" :alt="'Project'[title]" class="card__thumbnail" />
-      <p class="post-content">{{ previewText }}</p>
+      <!-- <p class="post-content">{{ previewText }}</p> -->
     </article>
   </div>
 </template>

@@ -2,11 +2,14 @@
   <div>
     <section class="GoBack_container"><GoBack /></section>
     <section class="intro">
-      <span>Selecciona el proyecto que quieras</span>
+      <!-- <span>Selecciona el proyecto que quieras</span> -->
+      <label for="selectTag">
+        <b-form-select v-model="selected" :options="tagOptions"></b-form-select>
+      </label>
     </section>
     <section class="featured-posts">
       <!-- <ProjectPreview :allProjects="data_projects" /> -->
-      <div v-for="(item, indx) of data_projects" :key="indx">
+      <div v-for="(item, indx) of projectsFiltered" :key="indx">
         <ProjectPreview
           :id="item.id"
           :title="item.title"
@@ -20,8 +23,10 @@
     <b-modal
       id="modal1"
       :title="projectSelected.title"
+      size="lg"
       no-close-on-esc
       hide-footer
+      centered
     >
       <div class="body_modal">
         <section class="body_modal_description">
@@ -38,6 +43,11 @@
             :alt="'Imagen proyecto'[projectSelected.title]"
             class="modal_img"
           />
+        </section>
+        <section>
+          <p class="my-3">
+            <i>{{ projectSelected.comment }}</i>
+          </p>
         </section>
         <nav class="m-2">
           <p>
@@ -63,18 +73,19 @@ export default {
   },
   data() {
     return {
+      selected: 'all',
       projectSelected: {},
+      projectsFiltered: [],
+      tagOptions: [
+        { value: 'all', text: 'Selecciona una opción' },
+        'HTML5',
+        'CSS3',
+        'SASS',
+        'JAVASCRIPT',
+        'REACT',
+        'VUEJS',
+      ],
       data_projects: [
-        {
-          id: 'project4',
-          title: 'Buscador de personajes',
-          gitHub: 'https://github.com/CriSFV/Rick-Morty-directory',
-          gitHubPages: 'https://crisfv.github.io/Rick-Morty-directory/#/',
-          img: '/assets/images/project4.png',
-          tags: ['HTML5', 'CSS3', 'SASS', 'JAVASCRIPT', 'REACT'],
-          comment:
-            'SPA creada con React con llamada a API externa. Responsive Desing',
-        },
         {
           id: 'project3',
           title: 'Buscador de series',
@@ -84,6 +95,16 @@ export default {
           tags: ['HTML5', 'CSS3', 'SASS', 'JAVASCRIPT'],
           comment:
             'Aplicación creada con JavaScript con llamada a API externa donde puedes buscar tus series favoritas',
+        },
+        {
+          id: 'project4',
+          title: 'Buscador de personajes',
+          gitHub: 'https://github.com/CriSFV/Rick-Morty-directory',
+          gitHubPages: 'https://crisfv.github.io/Rick-Morty-directory/#/',
+          img: '/assets/images/project4.png',
+          tags: ['HTML5', 'CSS3', 'SASS', 'JAVASCRIPT', 'REACT'],
+          comment:
+            'SPA creada con React con llamada a API externa. Responsive Desing',
         },
         {
           id: 'project2',
@@ -162,8 +183,24 @@ export default {
   },
   mounted() {
     console.log('data_projects:', this.data_projects)
+    this.filterProjects()
   },
+  watch: {
+    selected() {
+      this.filterProjects()
+    },
+  },
+
   methods: {
+    filterProjects() {
+      if (this.selected === 'all') {
+        this.projectsFiltered = this.data_projects
+      } else {
+        this.projectsFiltered = this.data_projects.filter((x) =>
+          x.tags.includes(this.selected)
+        )
+      }
+    },
     selectProject(item) {
       console.log(item)
       this.projectSelected = this.data_projects.find((x) => x.id === item)
@@ -176,27 +213,20 @@ export default {
 .GoBack_container
   margin: 15px
 .intro
-  position: relative
-  padding: 30px
-  box-sizing: border-box
-  background-position: center
-  background-size: cover
   text-align: center
-  margin: 60px
-  height: 35px
-.intro span
-  position: absolute
-  left: 5%
-  width: 90%
-  color: #413b42
-  padding: 10px
-  border-radius: 20px
-  box-shadow: 3px 3px 3px black
-  box-sizing: border-box
-  border: 1px solid black
-  font-size: 1.2rem
-  @media (min-width: 768px)
-    font-size: 2rem
+// .intro span
+//   position: absolute
+//   left: 5%
+//   width: 90%
+//   color: #413b42
+//   padding: 10px
+//   border-radius: 20px
+//   box-shadow: 3px 3px 3px black
+//   box-sizing: border-box
+//   border: 1px solid black
+//   font-size: 1.2rem
+//   @media (min-width: 768px)
+//     font-size: 2rem
 .featured-posts
   display: flex
   padding: 20px
