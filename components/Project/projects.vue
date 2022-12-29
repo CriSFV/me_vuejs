@@ -50,13 +50,16 @@
           </p>
         </section>
         <nav class="m-2">
-          <p>
+          <p v-if="projectSelected.gitHub">
             Consultar repositorio en GitHub
             <a :href="projectSelected.gitHub" target="_blank"> aquí</a>
           </p>
           <p v-if="projectSelected.gitHubPages">
             Ver web
             <a :href="projectSelected.gitHubPages" target="_blank"> aquí</a>
+          </p>
+          <p v-else class="right">
+            <small><i>Proyecto no desplegado</i></small>
           </p>
         </nav>
       </div>
@@ -82,6 +85,7 @@ export default {
         'JAVASCRIPT',
         'REACT',
         'VUEJS',
+        'BOOTSTRAP',
       ],
       data_projects: [
         {
@@ -174,6 +178,15 @@ export default {
           gitHubPages: 'https://vue-pok.netlify.app/',
           img: '/assets/images/project9.jpg',
           tags: ['HTML5', 'CSS3', 'VUEJS'],
+          comment: 'Proyecto creado como ejercicio de aprendizaje con VUE',
+        },
+        {
+          id: 'project11',
+          title: 'Indecision questions',
+          gitHub: 'https://github.com/CriSFV/Indecision-questions',
+          gitHubPages: '',
+          img: '/assets/images/project11.jpg',
+          tags: ['HTML5', 'SCSS', 'VUEJS'],
           comment: 'Proyecto creado como ejercicio de aprendizaje con VUE',
         },
         {

@@ -8,9 +8,9 @@
 <script>
 export default {
   layout: 'default',
-  components: {
-    AppHeader: () => import('../components/Navigation/AppHeader.vue'),
-  },
+  // components: {
+  //   AppHeader: () => import('../components/Navigation/AppHeader.vue'),
+  // },
 }
 </script>
 <style>

@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/headerStyle.scss';
+@import '@/assets/styles/header.sass';
 </style>
 <style lang="sass" scoped>
 .goUp

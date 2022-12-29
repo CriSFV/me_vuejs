@@ -28,5 +28,5 @@
 export default {}
 </script>
 <style scoped>
-@import '@/assets/styles/headerStyle.scss';
+@import '@/assets/styles/header.sass';
 </style>
