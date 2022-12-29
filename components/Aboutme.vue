@@ -23,7 +23,7 @@
         encuentre.
       </p>
     </section>
-    <section class="mb-5">
+    <section class="mb-2">
       <h3>Aptitudes:</h3>
       <ul>
         <li>Alta capacidad de trabajo en equipo</li>
@@ -38,17 +38,17 @@
         </li>
       </ul>
     </section>
-    <section class="center">
-      <a
-        href="/assets/Pdfs/cfv_CV_Spanish.pdf"
-        class="btn-secondary"
-        target="_blank"
-      >
-        Pulsa para ver mi CV
-      </a>
-    </section>
-    <section>
+    <section class="">
       <!-- <h3>Competencias:</h3> -->
+      <div class="center my-3">
+        <button
+          v-show="showExperience"
+          @click.prevent="showProfessionalExperience"
+          class="btn-secondary"
+        >
+          Ver experiencia provesional
+        </button>
+      </div>
       <ul class="tagList">
         <li v-for="(tag, idxTag) in icons" :key="idxTag" class="tagList-item">
           <span class="tag">
@@ -57,6 +57,56 @@
           <span> {{ tag.name }} </span>
         </li>
       </ul>
+    </section>
+    <section v-show="!showExperience" class="">
+      <h3>Experiencia profesional:</h3>
+      <ul>
+        <li>
+          <span>Febrero 2022 - Actualmente</span>
+          <h6><b>FRONT-END DEVELOPER JR</b>- CEPEISA</h6>
+          <p>
+            Desarrollo front-end de nueva aplicación de la compañia. Realización
+            de maquetación responsive y diferentes funcionalidades.
+          </p>
+          <p>
+            Stack utilizado: HTML5, CSS, SASS, Bootstrap, Element.io, VUE, Nuxt
+          </p>
+        </li>
+        <li class="my-4">
+          <span>Abril 2021 - Mayo 2022</span>
+          <h6><b>TECNICO RRHH,</b> WERKHAUS SL SCS</h6>
+          <p>
+            PNL certificado de profesionalidad nivel 3. Técnico de recursos
+            humanos. Gestión y administración del personal
+          </p>
+        </li>
+        <li>
+          <span>Julio 2005 - Diciembre 2019</span>
+          <h6>
+            <b
+              >TEAM LEADER SENIOR (2017-2019), TEAM LEADER(2009-2017), TRAFFIC
+              CONTROLER (2006-2009)</b
+            >
+            TRANSCOM WW
+          </h6>
+          <p>
+            Gestión de equipos a diferentes niveles y realización de tareas de
+            BU del responsable del servicio. Elaboración de previsiones,
+            informes a distintos niveles y planes de acción para alcanzar los
+            objetivos. Control del personal y seguimiento de agentes. Reparto de
+            tareas de trabajo
+          </p>
+        </li>
+      </ul>
+      <nav class="center">
+        <a
+          href="/assets/Pdfs/cfv_CV_Spanish.pdf"
+          class="btn-secondary"
+          target="_blank"
+        >
+          Ver CV en Pdf
+        </a>
+      </nav>
     </section>
   </div>
 </template>
@@ -68,6 +118,7 @@ export default {
   },
   data() {
     return {
+      showExperience: true,
       icons: [
         { icon: 'fas fa-code', name: 'Code' },
         { icon: 'fab fa-html5', name: 'HTML' },
@@ -85,6 +136,9 @@ export default {
     }
   },
   methods: {
+    showProfessionalExperience() {
+      this.showExperience = false
+    },
     downloadPdf() {
       window.open('/assets/Pdfs/cfv_CV_Spanish.pdf')
     },
@@ -98,7 +152,6 @@ export default {
   margin-top: 100px
 .tagList
   list-style-type: none
-  padding: 30px
   display: flex
   flex-direction: column
   align-items: center
@@ -110,10 +163,8 @@ export default {
     display: flex
     justify-content: center
     align-items: center
-    line-height: 30px
     width: 150px
-    height: 50px
-    padding: 10px
+    padding: 5px
     background-color: $principal-color
     margin: 10px
     border-radius: 20px
