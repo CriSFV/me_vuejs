@@ -44,7 +44,7 @@
         <button
           v-show="showExperience"
           @click.prevent="showProfessionalExperience"
-          class="btn-secondary"
+          class="secondary-btn"
         >
           Ver experiencia provesional
         </button>
