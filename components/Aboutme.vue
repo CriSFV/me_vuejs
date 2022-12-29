@@ -7,7 +7,7 @@
         Estudié Educación Social hasta que, haciendo las prácticas de la
         carrera, vi que no era lo mío, así que me puse a trabajar en el sector
         de atención al cliente, donde mayoritariamente he estado gestionando
-        equipos en diferentes campañas y a distintos niveles.
+        equipos en diversas campañas y a distintos niveles.
       </p>
       <p>
         Después de unos años allí, quise mejorar mi formación y ampliar
@@ -38,8 +38,17 @@
         </li>
       </ul>
     </section>
+    <section class="center">
+      <a
+        href="/assets/Pdfs/cfv_CV_Spanish.pdf"
+        class="btn-secondary"
+        target="_blank"
+      >
+        Pulsa para ver mi CV
+      </a>
+    </section>
     <section>
-      <h3>Competencias:</h3>
+      <!-- <h3>Competencias:</h3> -->
       <ul class="tagList">
         <li v-for="(tag, idxTag) in icons" :key="idxTag" class="tagList-item">
           <span class="tag">
@@ -49,15 +58,6 @@
         </li>
       </ul>
     </section>
-
-    <!-- <button
-      download
-      @click="downloadPdf"
-      href="/Pdfs/cfv_CV_Spanish.pdf"
-      class="btn-principal"
-    >
-      Pulsa para ver CV
-    </button> -->
   </div>
 </template>
 
@@ -86,7 +86,7 @@ export default {
   },
   methods: {
     downloadPdf() {
-      window.open('/Pdfs/cfv_CV_Spanish.pdf')
+      window.open('/assets/Pdfs/cfv_CV_Spanish.pdf')
     },
   },
 }
@@ -100,7 +100,12 @@ export default {
   list-style-type: none
   padding: 30px
   display: flex
-  flex-wrap: wrap
+  flex-direction: column
+  align-items: center
+  @media(min-width: 400px)
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
   .tagList-item
     display: flex
     justify-content: center

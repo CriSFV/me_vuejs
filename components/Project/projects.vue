@@ -52,13 +52,11 @@
         <nav class="m-2">
           <p>
             Consultar repositorio en GitHub
-            <a :href="projectSelected.gitHub" target="_blank">Pincha aquí</a>
+            <a :href="projectSelected.gitHub" target="_blank"> aquí</a>
           </p>
-          <p>
+          <p v-if="projectSelected.gitHubPages">
             Ver web
-            <a :href="projectSelected.gitHubPages" target="_blank"
-              >Pincha aquí</a
-            >
+            <a :href="projectSelected.gitHubPages" target="_blank"> aquí</a>
           </p>
         </nav>
       </div>
@@ -92,7 +90,7 @@ export default {
           gitHub: 'https://github.com/CriSFV/Series-Searcher',
           gitHubPages: 'https://crisfv.github.io/Series-Searcher/',
           img: '/assets/images/project3.png',
-          tags: ['HTML5', 'CSS3', 'SASS', 'JAVASCRIPT'],
+          tags: ['HTML5', 'CSS3', 'SCSS', 'JAVASCRIPT'],
           comment:
             'Aplicación creada con JavaScript con llamada a API externa donde puedes buscar tus series favoritas',
         },
@@ -102,7 +100,7 @@ export default {
           gitHub: 'https://github.com/CriSFV/Rick-Morty-directory',
           gitHubPages: 'https://crisfv.github.io/Rick-Morty-directory/#/',
           img: '/assets/images/project4.png',
-          tags: ['HTML5', 'CSS3', 'SASS', 'JAVASCRIPT', 'REACT'],
+          tags: ['HTML5', 'CSS3', 'SCSS', 'JAVASCRIPT', 'REACT'],
           comment:
             'SPA creada con React con llamada a API externa. Responsive Desing',
         },
@@ -112,7 +110,7 @@ export default {
           gitHub: 'https://github.com/CriSFV/Guess-the-number',
           gitHubPages: 'https://crisfv.github.io/Guess-the-number/',
           img: '/assets/images/project2.png',
-          tags: ['HTML5', 'CSS3', 'SASS', 'JAVASCRIPT'],
+          tags: ['HTML5', 'CSS3', 'SCSS', 'JAVASCRIPT'],
           comment:
             'Aplicación creada con JavaScript en la que tienes que tratar de adivinar el número aleatorio',
         },
@@ -124,7 +122,7 @@ export default {
           img: '/assets/images/project5.png',
           tags: ['JAVASCRIPT', 'REACT'],
           comment:
-            'Aplicación aún en construcción creada con React y con petición a API de palabra aleatoria que tienes que tratar de adivinar con el conocido juego del ahorcado.',
+            'Aplicación con maquetación heredada, funcionalidad realizada con React. Petición a API de palabra aleatoria que tienes que tratar de adivinar con el conocido juego del ahorcado.',
         },
 
         {
@@ -133,7 +131,7 @@ export default {
           gitHub: 'https://github.com/CriSFV/awesome-profile-cards',
           gitHubPages: 'https://crisfv.github.io/awesome-profile-cards/',
           img: '/assets/images/project6.png',
-          tags: ['HTML5', 'CSS3', 'SASS', 'JAVASCRIPT'],
+          tags: ['HTML5', 'CSS3', 'SCSS', 'JAVASCRIPT'],
           comment:
             'Aplicación responsive creada con JavaScript en la que puedes crear una tarjeta personalizada, creado en equipo bajo filosofía Agile',
         },
@@ -154,7 +152,7 @@ export default {
           gitHub: 'https://github.com/CriSFV/My-favorites-clubs',
           gitHubPages: 'https://crisfv.github.io/My-favorites-clubs/',
           img: '/assets/images/project7.png',
-          tags: ['HTML5', 'CSS3', 'SASS', 'JAVASCRIPT', 'REACT'],
+          tags: ['HTML5', 'CSS3', 'SCSS', 'JAVASCRIPT', 'REACT'],
           comment:
             'SPA creada con React en la que añadir y modificar tu lista de clubs.',
         },
@@ -165,7 +163,7 @@ export default {
           gitHub: 'https://github.com/CriSFV/Maquetacion-de-una-web',
           gitHubPages: 'https://crisfv.github.io/Maquetacion-de-una-web/',
           img: '/assets/images/project1.png',
-          tags: ['HTML5', 'CSS3', 'SASS', 'GULP'],
+          tags: ['HTML5', 'CSS3', 'SCSS', 'GULP'],
           comment:
             'Maquetación de una web responsive en equipo bajo filosofía agile',
         },
@@ -177,6 +175,15 @@ export default {
           img: '/assets/images/project9.jpg',
           tags: ['HTML5', 'CSS3', 'VUEJS'],
           comment: 'Proyecto creado como ejercicio de aprendizaje con VUE',
+        },
+        {
+          id: 'project10',
+          title: 'This is me',
+          gitHub: 'https://github.com/CriSFV/this_is_me',
+          gitHubPages: '',
+          img: '/assets/images/project10.jpg',
+          tags: ['HTML5', 'SCSS', 'SASS', 'VUEJS', 'BOOTSTRAP'],
+          comment: 'Nuevo portfolio creado con VUEJS',
         },
       ],
     }
