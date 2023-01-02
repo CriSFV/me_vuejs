@@ -23,7 +23,7 @@
             type="text"
             name="lastname"
             id="lastname"
-            placeholder="Indica tu nombre"
+            placeholder="Indica tu apellido, si quieres"
         /></label>
         <label for="email" class="email"
           >Email:
@@ -36,7 +36,19 @@
         /></label>
         <label for="message" class="message"
           >Mensaje:
-          <textarea name="message" id="message" cols="50" rows="5"></textarea>
+          <textarea
+            class="responsive_md"
+            name="message"
+            id="message"
+            cols="53"
+            rows="5"
+            style="margin: auto"
+          ></textarea>
+          <textarea
+            class="responsive_sm"
+            name="message"
+            id="message"
+          ></textarea>
         </label>
         <input type="submit" class="secondary-btn form_btn" value="Enviar" />
       </form>
@@ -90,11 +102,13 @@ export default {
     padding: 10px
     border-radius: 5px
     width: fit-content
-    margin: auto
+    margin: 3em auto
+    height: fit-content
 .form_continer
-    height: 80vh
+    height: 50vh
     max-width: 600px
     margin: auto
+    padding: 2em 1em
     display: grid
     grid-template-columns: 1fr 1fr
     gap: 2%

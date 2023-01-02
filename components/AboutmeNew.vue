@@ -89,7 +89,7 @@
       <nav class="center">
         <a
           href="/assets/Pdfs/cfv_CV_Spanish.pdf"
-          class="secondary-btn"
+          class="secondary-btn link"
           target="_blank"
         >
           Ver CV en Pdf
@@ -160,22 +160,25 @@ export default {
   box-shadow: 1px 1px 7px rgba(0,0,0,0.5)
   animation: cascade 5s linear
 
-.bocadillo:nth-child(8)
-  animation-delay: 0s
-.bocadillo:nth-child(7)
-  animation-delay: 0.2s
-.bocadillo:nth-child(6)
-  animation-delay: 0.4s
-.bocadillo:nth-child(5)
-  animation-delay: 0.6s
-.bocadillo:nth-child(4)
-  animation-delay: 0s
-.bocadillo:nth-child(3)
-  animation-delay: 0.2s
-.bocadillo:nth-child(2)
-  animation-delay: 0.4s
-.bocadillo:nth-child(1)
-  animation-delay: 0.6s
+// .bocadillo:nth-child(8)
+//   animation-delay: 0s
+// .bocadillo:nth-child(7)
+//   animation-delay: 0.2s
+// .bocadillo:nth-child(6)
+//   animation-delay: 0.4s
+// .bocadillo:nth-child(5)
+//   animation-delay: 0.6s
+// .bocadillo:nth-child(4)
+//   animation-delay: 0s
+// .bocadillo:nth-child(3)
+//   animation-delay: 0.2s
+// .bocadillo:nth-child(2)
+//   animation-delay: 0.4s
+// .bocadillo:nth-child(1)
+//   animation-delay: 0.6s
 .all_about_btn
   animation: fade-in 5s ease
+.link
+  &:hover
+    text-decoration: none
 </style>
