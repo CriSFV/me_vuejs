@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="GoBack_container"><GoBack /></section>
+    <section class="GoBack_container mt-2"><GoBack /></section>
     <hr />
     <section class="all_about_me extra_container">
       <article class="bocadillo">
-        <p>Equipo</p>
+        <p>Gestion de equipos</p>
       </article>
       <article class="bocadillo">
         <p>Adaptación a los cambios</p>
@@ -46,7 +46,7 @@
         </button>
       </div>
     </section>
-    <section v-show="!showExperience" class="extra_container">
+    <section v-show="!showExperience" class="extra_container fade-in">
       <h3>Experiencia profesional:</h3>
       <ul>
         <li>
@@ -159,8 +159,9 @@ export default {
   border-radius: 20px
   box-shadow: 1px 1px 7px rgba(0,0,0,0.5)
   animation: cascade 5s linear
+
 .bocadillo:nth-child(8)
-  animation-delay: 0.1s
+  animation-delay: 0s
 .bocadillo:nth-child(7)
   animation-delay: 0.2s
 .bocadillo:nth-child(6)
@@ -168,7 +169,7 @@ export default {
 .bocadillo:nth-child(5)
   animation-delay: 0.6s
 .bocadillo:nth-child(4)
-  animation-delay: 0.1s
+  animation-delay: 0s
 .bocadillo:nth-child(3)
   animation-delay: 0.2s
 .bocadillo:nth-child(2)
