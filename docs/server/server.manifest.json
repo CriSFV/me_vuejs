@@ -1,0 +1,43 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/aboutme-new.js": "components/aboutme-new.js",
+    "components/aboutme.js": "components/aboutme.js",
+    "components/hero.js": "components/hero.js",
+    "components/navigation-app-header.js": "components/navigation-app-header.js",
+    "components/navigation-goback.js": "components/navigation-goback.js",
+    "components/navigation-menu-links-nav.js": "components/navigation-menu-links-nav.js",
+    "components/navigation-menu-links.js": "components/navigation-menu-links.js",
+    "components/project-preview.js": "components/project-preview.js",
+    "components/project-projects-id.js": "components/project-projects-id.js",
+    "components/project-projects.js": "components/project-projects.js",
+    "pages/aboutme/index.js": "pages/aboutme/index.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/contact/index.js": "pages/contact/index.js",
+    "pages/index.js": "pages/index.js",
+    "pages/projects.js": "pages/projects.js",
+    "pages/projects/_id.js": "pages/projects/_id.js",
+    "pages/projects/index.js": "pages/projects/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/aboutme-new.js": "components/aboutme-new.js.map",
+    "components/aboutme.js": "components/aboutme.js.map",
+    "components/hero.js": "components/hero.js.map",
+    "components/navigation-app-header.js": "components/navigation-app-header.js.map",
+    "components/navigation-goback.js": "components/navigation-goback.js.map",
+    "components/navigation-menu-links-nav.js": "components/navigation-menu-links-nav.js.map",
+    "components/navigation-menu-links.js": "components/navigation-menu-links.js.map",
+    "components/project-preview.js": "components/project-preview.js.map",
+    "components/project-projects-id.js": "components/project-projects-id.js.map",
+    "components/project-projects.js": "components/project-projects.js.map",
+    "pages/aboutme/index.js": "pages/aboutme/index.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/contact/index.js": "pages/contact/index.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/projects.js": "pages/projects.js.map",
+    "pages/projects/_id.js": "pages/projects/_id.js.map",
+    "pages/projects/index.js": "pages/projects/index.js.map",
+    "server.js": "server.js.map"
+  }
+}
