@@ -46,7 +46,7 @@
           @click.prevent="showProfessionalExperience"
           class="secondary-btn"
         >
-          Ver experiencia provesional
+          Ver experiencia profesional
         </button>
       </div>
       <ul class="tagList">

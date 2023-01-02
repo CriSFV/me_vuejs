@@ -6,7 +6,7 @@
 <script>
 export default {
   components: {
-    AboutMe: () => import('@/components/Aboutme.vue'),
+    AboutMe: () => import('@/components/AboutmeNew.vue'),
   },
 }
 </script>

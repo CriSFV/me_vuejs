@@ -1,7 +1,7 @@
 <template>
   <section class="goBack_container">
     <span @click="goBack" class="goBack">
-      <i class="fas fa-angle-left" /> volver
+      <i class="fas fa-angle-left" /> volver home
     </span>
     <div class="responsive_sm">
       <b-button v-b-toggle.sidebar-1 class="boton_menu">Menu</b-button>
