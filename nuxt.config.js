@@ -1,10 +1,13 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
-
+  target: 'static',
+  router: {
+    base: '/this_is_me/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'me_vuejs',
+    title: 'this_is_me',
     htmlAttrs: {
       lang: 'en',
     },
@@ -28,11 +31,7 @@ export default {
     ],
   },
   
-  build: {
-    babel: {
-     compact: true,
-    },
- },
+
 
 
 
@@ -55,5 +54,10 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  // build: {},
+  build: {
+    babel: {
+     compact: true,
+    },
+ },
 }

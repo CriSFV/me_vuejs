@@ -193,10 +193,10 @@ export default {
           id: 'project10',
           title: 'This is me',
           gitHub: 'https://github.com/CriSFV/this_is_me',
-          gitHubPages: '',
+          gitHubPages: 'https://thisismecris.netlify.app/',
           img: '/assets/images/project10.jpg',
           tags: ['HTML5', 'SCSS', 'SASS', 'VUEJS', 'BOOTSTRAP'],
-          comment: 'Nuevo portfolio creado con VUEJS',
+          comment: 'Nuevo portfolio creado con VUEJS, por el que estás navegando',
         },
       ],
     }
